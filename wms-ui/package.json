@@ -1,0 +1,46 @@
+{
+  "name": "potato-warehouse-management",
+  "version": "1.0.0",
+  "description": "Warehouse Management System for Potato Storage",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "electron": "electron .",
+    "electron-dev": "concurrently \"npm run dev\" \"wait-on http://localhost:3000 && electron .\"",
+    "electron-build": "npm run build && electron-builder"
+  },
+  "dependencies": {
+    "@types/node": "^20.14.10",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.19",
+    "lucide-react": "^0.408.0",
+    "next": "^14.2.5",
+    "postcss": "^8.4.39",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "sqlite3": "^5.1.7",
+    "tailwindcss": "^3.4.7",
+    "typescript": "^5.5.4"
+  },
+  "devDependencies": {
+    "electron": "^31.2.1",
+    "electron-builder": "^25.0.0",
+    "concurrently": "^8.2.2",
+    "wait-on": "^7.2.0",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.5"
+  },
+  "keywords": [
+    "warehouse",
+    "potato",
+    "inventory",
+    "management"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "main": "electron/main.js",
+  "homepage": "./"
+}
